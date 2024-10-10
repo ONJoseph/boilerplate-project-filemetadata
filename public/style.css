@@ -15,28 +15,49 @@ body {
 
 .footer {
   margin-top: 60px;
+  color: #555;
 }
 
 a {
   color: #2574A9;
+  text-decoration: none;
 }
 
-input {
+a:hover {
+  text-decoration: underline;
+}
+
+input, button {
   display: block;
-  position: relative;
   margin: 10px auto;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-input#button {
-  width: 230px;
+button#button {
+  background-color: #2574A9;
+  color: white;
+  cursor: pointer;
+}
+
+button#button:hover {
+  background-color: #1A5276;
 }
 
 .view {
-  position:relative;
+  position: relative;
   margin: auto;
   margin-top: 40px;
-  border: 1px  solid  #aaa;
+  border: 1px solid #aaa;
   padding: 20px;
   width: 60%;
   min-width: 400px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.view h3 {
+  color: #333;
 }
